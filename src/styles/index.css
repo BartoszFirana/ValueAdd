@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
 @import "./nav.css";
 @import "./banner.css";
 @import "./main.css";
@@ -13,6 +15,7 @@ body {
 }
 
 * {
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -48,4 +51,12 @@ header, main, footer {
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+
+p {
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
 }
