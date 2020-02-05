@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="26px" viewBox="0 0 36 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon_hamburger</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Angular-House" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Baza-wiedzy--Tablet-768px" transform="translate(-712.000000, -30.000000)" fill="#152743">
+            <g id="Navi">
+                <g id="icon_hamburger" transform="translate(712.000000, 30.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="36" height="2" rx="1"></rect>
+                    <rect id="Rectangle" x="0" y="12" width="36" height="2" rx="1"></rect>
+                    <rect id="Rectangle" x="0" y="24" width="36" height="2" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

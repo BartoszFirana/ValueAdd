@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="62px" viewBox="0 0 78 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon_development</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Angular-House" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Hire-us---Desktop-1200px" transform="translate(-507.000000, -971.000000)" stroke-width="2">
+            <g id="Our-Passion" transform="translate(400.000000, 785.000000)">
+                <g id="Development" transform="translate(0.000000, 117.000000)">
+                    <g id="icon_development" transform="translate(108.000000, 70.000000)">
+                        <path d="M75.6521739,57.2792609 C75.6521739,58.7140435 74.4782609,59.8879565 73.0434783,59.8879565 L2.60869565,59.8879565 C1.17391304,59.8879565 0,58.7140435 0,57.2792609 L0,2.60882609 C0,1.17404348 1.17391304,0.000130434783 2.60869565,0.000130434783 L73.0434783,0.000130434783 C74.4782609,0.000130434783 75.6521739,1.17404348 75.6521739,2.60882609 L75.6521739,57.2792609 Z" id="Stroke-1" stroke="#000000"></path>
+                        <path d="M0,10.4347826 L75.6521739,10.4347826" id="Stroke-3" stroke="#000000"></path>
+                        <path d="M40.4347826,45.6521739 L56.0869565,45.6521739" id="Stroke-5" stroke="#296AD0"></path>
+                        <polyline id="Stroke-7" stroke="#296AD0" points="19.5652174 24.7826087 30 35.2173913 19.5652174 45.6521739"></polyline>
+                        <path d="" id="Stroke-9" stroke="#000000"></path>
+                        <path d="" id="Stroke-11" stroke="#000000"></path>
+                        <path d="" id="Stroke-13" stroke="#000000"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
