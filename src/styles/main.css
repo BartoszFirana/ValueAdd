@@ -1,0 +1,15 @@
+.section__passions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-rows: auto;
+}
+
+.section__passions--item {
+    text-align: center;
+    padding: 10px;
+}
+
+.section__title {
+    text-align: center;
+    padding: 20px;
+}

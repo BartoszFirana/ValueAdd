@@ -8,6 +8,9 @@
     position: absolute;
     color: white;
     bottom: 0;
+    right: 50%;
+    transform: translate(50%, 0%);
+    padding: 30px;
 }
 
 .desktop__banner {
