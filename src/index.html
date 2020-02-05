@@ -49,14 +49,20 @@
             <h2 class="section__title">Our Passion</h2>
             <div class="section__passions">
                 <div class="section__passions--item">
+                    <img class="section__pattern" src="./images/Pattern.svg" alt="">
+                    <img src="./images/icon_development.svg" alt="Development Passion in Angular House">
                     <h3>Development</h3>
                     <p>Living in today's metrpolitan world of cellular phones, mobile computers.</p>
                 </div>
                 <div class="section__passions--item">
+                    <img class="section__pattern" src="./images/Pattern.svg" alt="">
+                    <img src="./images/icon_audyt.svg" alt="Audyt Passion in Angular House">
                     <h3>Audyt</h3>
                     <p>It is a good idea to think of your PC as an office. It stores files, programs, pictures.</p>
                 </div>
                 <div class="section__passions--item">
+                    <img class="section__pattern" src="./images/Pattern.svg" alt="">
+                    <img src="./images/icon_consulting.svg" alt="Consulting Passion in Angular House">
                     <h3>Consulting</h3>
                     <p>Last month, my wife, Anne Doe, took me to Las Vegas becaouse she had to go</p>
                 </div>
@@ -65,23 +71,28 @@
         <section class="writeus sitewidth">
             <h2 class="section__title">Write Us</h2>
             <form action="/">
-                <fieldset>
+                <fieldset class="fieldset">
                     <h2>Potrzebujesz pomocy z projektem?</h2>
                     <p>Napisz do nas, jesteśmy profesjonalistami w temacie programowania, consultingu i audytu IT</p>
-                    Imię i nazwisko<br>
-                    <input type="text" name="fullname" placeholder="Jan Kowalski"><br>
-                    Adres e-mail<br>
-                    <input type="email" name="email"><br>
-                    Numer telefonu<br>
-                    <input type="tel" name="phone"><br>
-                    Temat<br>
-                    <select name="topic">
-                        <option value="Consulting">Consulting</option>
-                    </select><br>
-                    Treść<br>
-                    <input type="text" name="lastname"><br>
-                    <input type="checkbox" name="regulations"> Wysyłając wiadomość zgadzasz się na przekazanie nam
-                    Twoich danych osobowych
+                    <label class="fieldset__label">Imię i nazwisko
+                        <input class="fieldset__input" type="text" name="fullname" placeholder="Jan Kowalski">
+                    </label>
+                    <label class="fieldset__label">Adres e-mail
+                        <input class="fieldset__input" type="email" name="email"
+                            placeholder="jan.kowalski@mojafirma.pl"></label>
+                    <label class="fieldset__label">Numer telefonu
+                        <input class="fieldset__input" type="tel" name="phone" placeholder="+48 285 285 687"></label>
+                    <label class="fieldset__label">Temat
+                        <select class="fieldset__input" name="topic"></label>
+                    <option value="Consulting">Consulting</option>
+                    </select></label>
+                    <label class="fieldset__label">Treść
+                        <input class="fieldset__input" type="text" name="text"
+                            placeholder="Tutaj wpisz treść wiadomości..."></label>
+                    <label class="fieldset__label">
+                        <input type="checkbox" name="regulations">
+                        Wysyłając wiadomość zgadzasz się na przekazanie nam Twoich danych osobowych
+                    </label>
                     <input class="layout__button" type="submit" value="Wyślij">
                 </fieldset>
             </form>
