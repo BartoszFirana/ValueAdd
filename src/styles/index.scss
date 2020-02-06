@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 
-@import "./nav.css";
-@import "./banner.css";
-@import "./main.css";
+@import "./nav.scss";
+@import "./banner.scss";
+@import "./main.scss";
+@import "./footer.scss";
 
 body {
     margin: 0;
@@ -23,7 +24,9 @@ main {
     flex-grow: 1;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     flex-shrink: 0;
 }
 
@@ -58,6 +61,8 @@ p {
     font-weight: 300;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 500;
 }

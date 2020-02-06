@@ -53,8 +53,27 @@
     margin-top: 10px;
 }
 
+.fieldset__input::placeholder {
+    color: #8c98af;
+}
+
 .fieldset__label {
     display: block;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.section__trustedus {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-template-rows: auto;
+    border-top: 1px solid #d4dbe9;
+    border-left: 1px solid #d4dbe9;
+}
+
+.section__trustedus--item {
+    border-bottom: 1px solid #d4dbe9;
+    border-right: 1px solid #d4dbe9;
+    text-align: center;
+    padding: 10px;
 }

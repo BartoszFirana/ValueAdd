@@ -6,42 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>House of Angular</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index.scss">
 </head>
 
 <body>
     <header class="header">
         <nav class="nav">
-            <div class="container spacebetween">
-                <div class="logo">
-                    <a href="">Logo</a>
-                </div>
-                <div class="nav__center">
-                    <ul class="nav__list">
-                        <li><a href="">Strona Główna</a></li>
-                        <li><a href="">Baza Wiedzy</a></li>
-                        <li><a href="">Open source</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Hire Us</a></li>
-                    </ul>
-                </div>
-                <button class="nav__login layout__button">Login</button>
-            </div>
         </nav>
         <div class="banner">
-            <img class="desktop__banner" src="./images/desktop_banner_photo.png" alt="">
-            <div class="banner__text sitewidth">
-                <h2>Angular House is part of ValueAdd company</h2>
-                <p>
-                    Over 92% of computers are infected with Adware and spyware. Such software is rarely accompaied by
-                    <br>
-                    uninstall utility and even when it is it almost always leaves broken Windows Registry keys behind
-                    it.
-                </p>
-                <button class="banner__button layout__button">
-                    Write Us
-                </button>
-            </div>
         </div>
     </header>
     <main class="main">
@@ -74,21 +46,30 @@
                 <fieldset class="fieldset">
                     <h2>Potrzebujesz pomocy z projektem?</h2>
                     <p>Napisz do nas, jesteśmy profesjonalistami w temacie programowania, consultingu i audytu IT</p>
-                    <label class="fieldset__label">Imię i nazwisko
+                    <label class="fieldset__label">
+                        <strong>Imię i nazwisko</strong>
                         <input class="fieldset__input" type="text" name="fullname" placeholder="Jan Kowalski">
                     </label>
-                    <label class="fieldset__label">Adres e-mail
+                    <label class="fieldset__label">
+                        <strong>Adres e-mail</strong>
                         <input class="fieldset__input" type="email" name="email"
-                            placeholder="jan.kowalski@mojafirma.pl"></label>
-                    <label class="fieldset__label">Numer telefonu
-                        <input class="fieldset__input" type="tel" name="phone" placeholder="+48 285 285 687"></label>
-                    <label class="fieldset__label">Temat
-                        <select class="fieldset__input" name="topic"></label>
-                    <option value="Consulting">Consulting</option>
-                    </select></label>
-                    <label class="fieldset__label">Treść
+                            placeholder="jan.kowalski@mojafirma.pl" />
+                    </label>
+                    <label class="fieldset__label">
+                        <strong>Numer telefonu</strong>
+                        <input class="fieldset__input" type="tel" name="phone" placeholder="+48 285 285 687">
+                    </label>
+                    <label class="fieldset__label">
+                        <strong>Temat</strong>
+                        <select class="fieldset__input" name="topic">
+                            <option value="Consulting">Consulting</option>
+                        </select>
+                    </label>
+                    <label class="fieldset__label">
+                        <strong>Treść</strong>
                         <input class="fieldset__input" type="text" name="text"
-                            placeholder="Tutaj wpisz treść wiadomości..."></label>
+                            placeholder="Tutaj wpisz treść wiadomości...">
+                    </label>
                     <label class="fieldset__label">
                         <input type="checkbox" name="regulations">
                         Wysyłając wiadomość zgadzasz się na przekazanie nam Twoich danych osobowych
@@ -99,11 +80,83 @@
         </section>
         <section class="trustedus sitewidth">
             <h2 class="section__title">Trusted Us</h2>
+            <div class="section__trustedus">
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+                <div class="section__trustedus--item">
+                    CocaCola
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        Angular House
+    <footer class="footer">
+        <div class="footer__container sitewidth">
+            <div class="footer__container--logo">
+                Angular House
+            </div>
+            <div class="footer__container--nav">
+                <ul class="footer__container--navlist">
+                    <li><a href="">Baza wiedzy</a></li>
+                    <li><a href="">Open Source</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Hire Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__container--media">
+                <img src="./images/facebook-logo.svg" alt="facebook">
+                <img src="./images/github-sign.svg" alt="github-sign">
+            </div>
+        </div>
+        <div class="copyrighter sitewidth">
+            Copyright &copy; 2013-2019 ValueAdd. All right reserved.
+        </div>
     </footer>
+
+    <script src="./scripts/index.js" type="text/javascript"></script>
 </body>
 
 </html>
