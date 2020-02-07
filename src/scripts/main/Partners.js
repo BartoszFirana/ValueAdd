@@ -1,5 +1,8 @@
+import resize from '../index';
+
 export default class Partners {
 
+    pageSize = null;
     contentSource = null;
 
     constructor(basicNode) {
@@ -8,24 +11,39 @@ export default class Partners {
 
     init() {
 
-        this.source();
+        this.pageSize = window.innerWidth;
 
-        this.render();
+        this.setPageWidth();
+
+        resize(this.setPageWidth);
 
     }
 
     render() {
 
-        this.basicNode.innerHTML = `
-        <h2 class="section__title">Trusted Us</h2>
-            <div class="section__trustedus">
-                ${this.contentSource.map(item => (`
-                    <div class="section__trustedus--item">
-                        ${item.name}
-                    </div>
-                `)).join("")}
-            </div>
-        `
+        if (this.pageSize < 768) {
+
+            this.contentSource = null;
+            this.basicNode.innerHTML = ``;
+
+        }
+
+        if (this.pageSize >= 768) {
+
+            this.source();
+
+            this.basicNode.innerHTML = `
+            <h2 class="section__title">Trusted Us</h2>
+                <div class="section__trustedus">
+                    ${this.contentSource.map(item => (`
+                        <div class="section__trustedus--item">
+                            ${item.name}
+                        </div>
+                    `)).join("")}
+                </div>
+            `
+
+        }
 
     }
 
@@ -99,6 +117,14 @@ export default class Partners {
         ]
 
         this.contentSource = contentSource;
+
+    }
+
+    setPageWidth = () => {
+
+        this.pageSize = window.innerWidth;
+
+        this.render()
 
     }
 }
