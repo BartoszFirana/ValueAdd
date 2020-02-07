@@ -23,7 +23,7 @@ export default class Passion {
 
         this.basicNode.innerHTML = this.contentSource.map(item => (`
             <div class="section__passions--item">
-                <img class="section__pattern" src="./images/Pattern.svg" alt="">
+                <img class="section__pattern" src="${patternImg}" alt="">
                 <img src="${item.picture}" alt="Development Passion in Angular House">
                 <h3>${item.name}</h3>
                 <p>${item.paragraph}</p>
