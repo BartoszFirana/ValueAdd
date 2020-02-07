@@ -1,3 +1,4 @@
+import resize from './index';
 import Logo from '../images/Logo - white.svg';
 
 export default class Nav {
@@ -10,11 +11,11 @@ export default class Nav {
 
     init() {
 
+        this.pageSize = window.innerWidth;
+
         this.setPageWidth();
 
-        this.bindEventHandlers();
-
-        this.render()
+        resize(this.setPageWidth);
 
     }
 
@@ -40,14 +41,6 @@ export default class Nav {
         this.basicNode.innerHTML = `
             ${this.pageSize >= 1260 ? desktopNav : "mobile version"}
         `;
-    }
-
-
-
-    bindEventHandlers() {
-
-        window.addEventListener('resize', this.setPageWidth);
-
     }
 
     setPageWidth = () => {
