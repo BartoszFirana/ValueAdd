@@ -1,0 +1,79 @@
+.section__passions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-rows: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section__passions--item {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.section__title {
+    text-align: center;
+    padding: 20px;
+}
+
+.section__title::after {
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background: #fc3b56;
+    height: 3px;
+    width: 40px;
+}
+
+.section__pattern {
+    width: 250px;
+    position: absolute;
+    transform: translate(-50%, -70%);
+    left: 50%;
+    top: 50%;
+    opacity: .7;
+}
+
+.fieldset {
+    border: 1px solid #d4dbe9;
+    width: 700px;
+    max-width: 95%;
+    margin: auto;
+    padding: 50px;
+}
+
+.fieldset__input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d4dbe9;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.fieldset__input::placeholder {
+    color: #8c98af;
+}
+
+.fieldset__label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section__trustedus {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-template-rows: auto;
+    border-top: 1px solid #d4dbe9;
+    border-left: 1px solid #d4dbe9;
+}
+
+.section__trustedus--item {
+    border-bottom: 1px solid #d4dbe9;
+    border-right: 1px solid #d4dbe9;
+    text-align: center;
+    padding: 10px;
+}

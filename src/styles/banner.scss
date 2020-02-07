@@ -1,0 +1,23 @@
+.banner {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner__text {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 0%);
+    padding: 30px;
+}
+
+.desktop__banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
