@@ -1,8 +1,13 @@
+import resize from './index';
 import bannerDesktop from '../images/desktop_banner_photo.png';
+import bannerTablet from '../images/tablet_banner_photo.png';
+import bannerPhone from '../images/phone_banner_photo.png';
 
 export default class Banner {
 
     contentSource = null;
+    pageSize = null;
+    pictureVersion = null;
 
     constructor(basicNode) {
         this.basicNode = basicNode;
@@ -10,18 +15,34 @@ export default class Banner {
 
     init() {
 
+        this.pageSize = window.innerWidth;
+
         this.source();
 
-        this.render();
+        this.setPageWidth();
+
+        resize(this.setPageWidth);
 
     }
 
     render() {
 
-        console.log(this.basicNode)
+        const picture = (pageSize) => {
+            if (pageSize >= 768) {
+                return this.pictureVersion = bannerDesktop;
+            }
+            if (pageSize < 768 && pageSize >= 360) {
+                return this.pictureVersion = bannerTablet;
+            }
+            if (pageSize < 360) {
+                return this.pictureVersion = bannerPhone;
+            }
+        }
+
+        picture(this.pageSize);
 
         this.basicNode.innerHTML = `
-            <img class="desktop__banner" src="${bannerDesktop}" alt="">
+            <img class="desktop__banner" src="${this.pictureVersion}" alt="">
                         <div class="banner__text sitewidth">
                             <h2>${this.contentSource.title}</h2>
                             <p>
@@ -43,6 +64,14 @@ export default class Banner {
         };
 
         this.contentSource = contentSource;
+
+    }
+
+    setPageWidth = () => {
+
+        this.pageSize = window.innerWidth;
+
+        this.render()
 
     }
 }
